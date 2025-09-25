@@ -17,6 +17,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		/>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<!-- Home Section -->
@@ -373,29 +374,6 @@
 			<p>&copy; 2023 Akhil Nautiyal. All rights reserved.</p>
 		</footer>
 	</body>
-	<script>
-		// Disable specific keyboard shortcuts
-		document.addEventListener("keydown", function (e) {
-			if (
-				e.ctrlKey &&
-				(e.key === "s" || e.key === "S" || e.key === "p" || e.key === "P")
-			) {
-				e.preventDefault();
-			}
-			if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-				e.preventDefault();
-			}
-		});
-
-		// Disable drag and drop for the entire document
-		document.addEventListener("dragstart", function (e) {
-			e.preventDefault();
-		});
-
-		// Disable right-click for the entire document
-		document.addEventListener("contextmenu", function (e) {
-			e.preventDefault();
-		});
-	</script>
 </html>
+
 
